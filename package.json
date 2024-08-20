@@ -1,0 +1,33 @@
+{
+  "name": "mjml-mailer-client",
+  "version": "1.0.0",
+  "description": "Client library for mjml-mail-server",
+  "main": "lib/client.js",
+  "types": "lib/client.d.ts",
+  "bin": {
+    "mjml-mailer-cli": "./lib/mjml-mailer-cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "scrub": "rm -rf node_modules lib/"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "commander": "^10.0.0",
+    "email-addresses": "^5.0.0",
+    "mjml": "^4.15.3",
+    "node-fetch": "^3.3.1",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/mjml": "^4.7.4",
+    "@types/node": "^20.0.0",
+    "@types/nunjucks": "^3.2.6",
+    "typescript": "^5.5.4"
+  },
+  "author": "",
+  "license": "ISC"
+}

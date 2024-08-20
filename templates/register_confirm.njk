@@ -1,0 +1,51 @@
+<mjml>
+  <mj-body>
+    <mj-section background-color="#f0f0f0" padding="20px">
+      <mj-column>
+        <mj-text align="center" font-size="20px" color="#333333">
+          Welcome to Our Service2,
+          {{ firstname }}!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-text font-size="16px" color="#555555">
+          Hi
+          {{ name }},
+        </mj-text>
+        <mj-text font-size="16px" color="#555555">
+          Thank you for registering on our platform. Here are your details:
+        </mj-text>
+        <mj-text font-size="16px" color="#555555">
+          <strong>Username:</strong>
+          {{ username }}
+          <br/>
+          <strong>Email:</strong>
+          {{ _rcpt_email_ }}
+        </mj-text>
+        <mj-text font-size="16px" color="#555555">
+          Please confirm your email address by clicking the button below:
+        </mj-text>
+        <mj-button href="{{ confirmation_link }}" background-color="#5cb85c" color="#ffffff">
+          Confirm Email
+        </mj-button>
+        <mj-text font-size="16px" color="#555555">
+          If you did not sign up for this account, please ignore this email.
+        </mj-text>
+        <mj-text font-size="16px" color="#555555">
+          Best regards,
+          <br/>
+          The Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#f0f0f0" padding="20px">
+      <mj-column>
+        <mj-text align="center" font-size="12px" color="#999999">
+          If you have any questions, feel free to contact us at support@ourservice.com.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
